@@ -11,7 +11,7 @@ y_train = train_data["quality"]
 X_test = test_data.drop(["quality"], axis=1)
 y_test = test_data["quality"]
 
-# Производим стандартизацию данных
+# Стандартизируем данные
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
